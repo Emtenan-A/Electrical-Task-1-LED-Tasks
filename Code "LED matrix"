@@ -1,0 +1,159 @@
+//define pins number
+
+int E1=5;
+int E2=4;
+int E3=3;
+int E4=2;
+int E5=1;
+int E6=0;
+int E7=A5;
+int E8=A4;
+
+int N1=13;
+int N2=12;
+int N3=11;
+int N4=10;
+int N5=9;
+int N6=8;
+int N7=7;
+int N8=6;
+
+int wait=250;
+
+//initializa pinMode
+
+void setup(){
+  pinMode (E1, OUTPUT);
+  pinMode (E2, OUTPUT);
+  pinMode (E3, OUTPUT);
+  pinMode (E4, OUTPUT);
+  pinMode (E5, OUTPUT);
+  pinMode (E6, OUTPUT);
+  pinMode (E7, OUTPUT);
+  pinMode (E8, OUTPUT);
+  
+  pinMode (N1, OUTPUT);
+  pinMode (N2, OUTPUT);
+  pinMode (N3, OUTPUT);
+  pinMode (N4, OUTPUT);
+  pinMode (N5, OUTPUT);
+  pinMode (N6, OUTPUT);
+  pinMode (N7, OUTPUT);
+  pinMode (N8, OUTPUT);
+}
+
+//define loop
+
+void loop () {
+  mysteryBox();
+}
+
+//mysteryBox function 
+
+void mysteryBox() {
+ 
+  //E2 column
+  
+  digitalWrite (E1,LOW);
+  digitalWrite (E2,HIGH);
+  digitalWrite (E3,LOW);
+  digitalWrite (E4,LOW);
+  digitalWrite (E5,LOW);
+  digitalWrite (E6,LOW);
+  digitalWrite (E7,LOW);
+  digitalWrite (E8,LOW);
+  
+  digitalWrite (N1,HIGH);
+  digitalWrite (N2,LOW);
+  digitalWrite (N3,LOW); 
+  digitalWrite (N4,LOW);
+  digitalWrite (N5,HIGH);
+  digitalWrite (N6,HIGH);
+  digitalWrite (N7,HIGH);
+  digitalWrite (N8,HIGH); 
+  delay(50);
+  
+  //E3 column
+  
+  digitalWrite (E1,LOW);
+  digitalWrite (E2,LOW);
+  digitalWrite (E3,HIGH);
+  digitalWrite (E4,LOW);
+  digitalWrite (E5,LOW);
+  digitalWrite (E6,LOW);
+  digitalWrite (E7,LOW);
+  digitalWrite (E8,LOW);
+  
+  digitalWrite (N1,LOW);
+  digitalWrite (N2,LOW);
+  digitalWrite (N3,LOW); 
+  digitalWrite (N4,HIGH);
+  digitalWrite (N5,HIGH);
+  digitalWrite (N6,HIGH);
+  digitalWrite (N7,HIGH);
+  digitalWrite (N8,HIGH);
+  delay(50);
+  
+   //E4+E5 columns
+  
+  digitalWrite (E1,LOW);
+  digitalWrite (E2,LOW);
+  digitalWrite (E3,LOW);
+  digitalWrite (E4,HIGH);
+  digitalWrite (E5,HIGH);
+  digitalWrite (E6,LOW);
+  digitalWrite (E7,LOW);
+  digitalWrite (E8,LOW);
+  
+  digitalWrite (N1,LOW);
+  digitalWrite (N2,LOW);
+  digitalWrite (N3,HIGH); 
+  digitalWrite (N4,HIGH);
+  digitalWrite (N5,LOW);
+  digitalWrite (N6,LOW);
+  digitalWrite (N7,HIGH);
+  digitalWrite (N8,LOW); 
+  delay(50);
+  
+ //E6 column
+  
+  digitalWrite (E1,LOW);
+  digitalWrite (E2,LOW);
+  digitalWrite (E3,LOW);
+  digitalWrite (E4,LOW);
+  digitalWrite (E5,LOW);
+  digitalWrite (E6,HIGH);
+  digitalWrite (E7,LOW);
+  digitalWrite (E8,LOW);
+  
+  digitalWrite (N1,LOW);
+  digitalWrite (N2,LOW);
+  digitalWrite (N3,LOW); 
+  digitalWrite (N4,LOW);
+  digitalWrite (N5,LOW);
+  digitalWrite (N6,HIGH);
+  digitalWrite (N7,HIGH);
+  digitalWrite (N8,HIGH);
+  delay(50);
+  
+   //E7 column
+  
+  digitalWrite (E1,LOW);
+  digitalWrite (E2,LOW);
+  digitalWrite (E3,LOW);
+  digitalWrite (E4,LOW);
+  digitalWrite (E5,LOW);
+  digitalWrite (E6,LOW);
+  digitalWrite (E7,HIGH);
+  digitalWrite (E8,LOW);
+  
+  digitalWrite (N1,HIGH);
+  digitalWrite (N2,LOW);
+  digitalWrite (N3,LOW); 
+  digitalWrite (N4,LOW);
+  digitalWrite (N5,LOW);
+  digitalWrite (N6,HIGH);
+  digitalWrite (N7,HIGH);
+  digitalWrite (N8,HIGH);
+  delay(50);
+}
